@@ -43,79 +43,79 @@ class NavBar {
 		};
 		document.getElementById("navigation").prepend(btnShowHide);
 
-		this._addElement_li(null, "index.html", "Home", {isRoot: true});
+		this._addElement_li(null, "index.html", "首頁", {isRoot: true});
 
 		this._addElement_dropdown(null, NavBar._CAT_RULES);
-		this._addElement_li(NavBar._CAT_RULES, "quickreference.html", "Quick Reference");
-		this._addElement_li(NavBar._CAT_RULES, "variantrules.html", "Optional, Variant, and Expanded Rules");
-		this._addElement_li(NavBar._CAT_RULES, "tables.html", "Tables");
+		this._addElement_li(NavBar._CAT_RULES, "quickreference.html", "快速參照");
+		this._addElement_li(NavBar._CAT_RULES, "variantrules.html", "選用、變體、擴展規則");
+		this._addElement_li(NavBar._CAT_RULES, "tables.html", "表格");
 		this._addElement_divider(NavBar._CAT_RULES);
 		this._addElement_dropdown(NavBar._CAT_RULES, NavBar._CAT_BOOKS, {isSide: true, page: "books.html"});
-		this._addElement_li(NavBar._CAT_BOOKS, "books.html", "View All/Homebrew");
+		this._addElement_li(NavBar._CAT_BOOKS, "books.html", "查看所有/自製內容");
 
 		this._addElement_dropdown(null, NavBar._CAT_PLAYER);
-		this._addElement_li(NavBar._CAT_PLAYER, "classes.html", "Classes");
-		this._addElement_li(NavBar._CAT_PLAYER, "backgrounds.html", "Backgrounds");
-		this._addElement_li(NavBar._CAT_PLAYER, "feats.html", "Feats");
-		this._addElement_li(NavBar._CAT_PLAYER, "races.html", "Races");
-		this._addElement_li(NavBar._CAT_PLAYER, "charcreationoptions.html", "Other Character Creation Options");
-		this._addElement_li(NavBar._CAT_PLAYER, "optionalfeatures.html", "Other Options & Features");
+		this._addElement_li(NavBar._CAT_PLAYER, "classes.html", "職業");
+		this._addElement_li(NavBar._CAT_PLAYER, "backgrounds.html", "背景");
+		this._addElement_li(NavBar._CAT_PLAYER, "feats.html", "專長");
+		this._addElement_li(NavBar._CAT_PLAYER, "races.html", "種族");
+		this._addElement_li(NavBar._CAT_PLAYER, "charcreationoptions.html", "其他角色創建選項");
+		this._addElement_li(NavBar._CAT_PLAYER, "optionalfeatures.html", "職業能力選項");
 		this._addElement_divider(NavBar._CAT_PLAYER);
-		this._addElement_li(NavBar._CAT_PLAYER, "statgen.html", "Stat Generator");
+		this._addElement_li(NavBar._CAT_PLAYER, "statgen.html", "屬性生成器");
 		this._addElement_divider(NavBar._CAT_PLAYER);
-		this._addElement_li(NavBar._CAT_PLAYER, "lifegen.html", "This Is Your Life");
-		this._addElement_li(NavBar._CAT_PLAYER, "names.html", "Names");
+		this._addElement_li(NavBar._CAT_PLAYER, "lifegen.html", "這是你的人生");
+		this._addElement_li(NavBar._CAT_PLAYER, "names.html", "名稱");
 
 		this._addElement_dropdown(null, NavBar._CAT_DUNGEON_MASTER);
-		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "dmscreen.html", "DM Screen");
+		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "dmscreen.html", "DM屏風");
 		this._addElement_divider(NavBar._CAT_DUNGEON_MASTER);
 		this._addElement_dropdown(NavBar._CAT_DUNGEON_MASTER, NavBar._CAT_ADVENTURES, {isSide: true, page: "adventures.html"});
-		this._addElement_li(NavBar._CAT_ADVENTURES, "adventures.html", "View All/Homebrew");
-		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "cultsboons.html", "Cults & Supernatural Boons");
-		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "objects.html", "Objects");
-		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "trapshazards.html", "Traps & Hazards");
+		this._addElement_li(NavBar._CAT_ADVENTURES, "adventures.html", "查看所有/自製內容");
+		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "cultsboons.html", "異教＆超自然恩惠");
+		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "objects.html", "物件");
+		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "trapshazards.html", "陷阱＆環境危害");
 		this._addElement_divider(NavBar._CAT_DUNGEON_MASTER);
-		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "crcalculator.html", "CR Calculator");
-		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "encountergen.html", "Encounter Generator");
-		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "lootgen.html", "Loot Generator");
+		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "crcalculator.html", "CR計算機");
+		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "encountergen.html", "遭遇生成器");
+		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "lootgen.html", "戰利品生成器");
 		this._addElement_divider(NavBar._CAT_DUNGEON_MASTER);
-		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "maps.html", "Maps");
+		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "maps.html", "地圖");
 
 		this._addElement_dropdown(null, NavBar._CAT_REFERENCES);
-		this._addElement_li(NavBar._CAT_REFERENCES, "actions.html", "Actions");
-		this._addElement_li(NavBar._CAT_REFERENCES, "bestiary.html", "Bestiary");
-		this._addElement_li(NavBar._CAT_REFERENCES, "conditionsdiseases.html", "Conditions & Diseases");
-		this._addElement_li(NavBar._CAT_REFERENCES, "deities.html", "Deities");
-		this._addElement_li(NavBar._CAT_REFERENCES, "items.html", "Items");
-		this._addElement_li(NavBar._CAT_REFERENCES, "languages.html", "Languages");
-		this._addElement_li(NavBar._CAT_REFERENCES, "rewards.html", "Supernatural Gifts & Rewards");
-		this._addElement_li(NavBar._CAT_REFERENCES, "psionics.html", "Psionics");
-		this._addElement_li(NavBar._CAT_REFERENCES, "spells.html", "Spells");
-		this._addElement_li(NavBar._CAT_REFERENCES, "vehicles.html", "Vehicles");
+		this._addElement_li(NavBar._CAT_REFERENCES, "actions.html", "動作");
+		this._addElement_li(NavBar._CAT_REFERENCES, "bestiary.html", "怪物圖鑑");
+		this._addElement_li(NavBar._CAT_REFERENCES, "conditionsdiseases.html", "狀態＆疾病");
+		this._addElement_li(NavBar._CAT_REFERENCES, "deities.html", "神祇");
+		this._addElement_li(NavBar._CAT_REFERENCES, "items.html", "物品");
+		this._addElement_li(NavBar._CAT_REFERENCES, "languages.html", "語言");
+		this._addElement_li(NavBar._CAT_REFERENCES, "rewards.html", "超自然餽贈＆獎勵");
+		this._addElement_li(NavBar._CAT_REFERENCES, "psionics.html", "靈能");
+		this._addElement_li(NavBar._CAT_REFERENCES, "spells.html", "法術");
+		this._addElement_li(NavBar._CAT_REFERENCES, "vehicles.html", "載具");
 		this._addElement_divider(NavBar._CAT_REFERENCES);
-		this._addElement_li(NavBar._CAT_REFERENCES, "recipes.html", "Recipes");
+		this._addElement_li(NavBar._CAT_REFERENCES, "recipes.html", "食譜");
 
 		this._addElement_dropdown(null, NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "search.html", "Search");
+		this._addElement_li(NavBar._CAT_UTILITIES, "search.html", "搜尋");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "blocklist.html", "Content Blocklist");
-		this._addElement_li(NavBar._CAT_UTILITIES, "makebrew.html", "Homebrew Builder");
-		this._addElement_li(NavBar._CAT_UTILITIES, "managebrew.html", "Homebrew Manager");
+		this._addElement_li(NavBar._CAT_UTILITIES, "blocklist.html", "內容黑名單");
+		this._addElement_li(NavBar._CAT_UTILITIES, "makebrew.html", "編寫自製內容");
+		this._addElement_li(NavBar._CAT_UTILITIES, "managebrew.html", "管理自製內容");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "inittrackerplayerview.html", "Initiative Tracker Player View");
+		this._addElement_li(NavBar._CAT_UTILITIES, "inittrackerplayerview.html", "先攻追蹤器：玩家端");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "renderdemo.html", "Renderer Demo");
-		this._addElement_li(NavBar._CAT_UTILITIES, "makecards.html", "RPG Cards JSON Builder");
-		this._addElement_li(NavBar._CAT_UTILITIES, "converter.html", "Text Converter");
+		this._addElement_li(NavBar._CAT_UTILITIES, "renderdemo.html", "渲染器預覽");
+		this._addElement_li(NavBar._CAT_UTILITIES, "makecards.html", "RPG卡片 JSON製作器");
+		this._addElement_li(NavBar._CAT_UTILITIES, "converter.html", "文字轉換器");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "plutonium.html", "Plutonium (Foundry Module) Features");
+		this._addElement_li(NavBar._CAT_UTILITIES, "plutonium.html", "Plutonium (Foundry Module) 功能");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "https://wiki.tercept.net/en/betteR20", "Roll20 Script Help", {isExternal: true});
+		this._addElement_li(NavBar._CAT_UTILITIES, "https://wiki.tercept.net/en/betteR20", "Roll20腳本小幫手", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "changelog.html", "Changelog");
-		this._addElement_li(NavBar._CAT_UTILITIES, NavBar._getCurrentWikiHelpPage(), "Help", {isExternal: true});
+		this._addElement_li(NavBar._CAT_UTILITIES, "changelog.html", "更改日誌");
+		this._addElement_li(NavBar._CAT_UTILITIES, NavBar._getCurrentWikiHelpPage(), "幫助", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "privacy-policy.html", "Privacy Policy");
+		this._addElement_li(NavBar._CAT_UTILITIES, "privacy-policy.html", "隱私政策");
 
 		this._addElement_dropdown(null, NavBar._CAT_SETTINGS);
 		this._addElement_button(
@@ -130,7 +130,7 @@ class NavBar {
 		this._addElement_button(
 			NavBar._CAT_SETTINGS,
 			{
-				html: styleSwitcher.getActiveWide() === true ? "Disable Wide Mode" : "Enable Wide Mode (Experimental)",
+				html: styleSwitcher.getActiveWide() === true ? "停用寬版模式" : "啟用寬版模式 (Experimental)",
 				click: (evt) => NavBar.InteractionManager._onClick_button_wideMode(evt),
 				className: "wideModeToggle",
 				title: "This feature is unsupported. Expect bugs.",
@@ -167,7 +167,7 @@ class NavBar {
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
-				html: "Preload Adventure Text <small>(25MB+)</small>",
+				html: "預載冒險模組文字 <small>(25MB+)</small>",
 				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /data\/adventure/),
 				title: "Preload adventure text for offline use.",
 			},
@@ -175,7 +175,7 @@ class NavBar {
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
-				html: "Preload Book Images <small>(1GB+)</small>",
+				html: "預載所有出版書籍圖片 <small>(1GB+)</small>",
 				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /img\/book/),
 				title: "Preload book images offline use. Note that book text is preloaded automatically.",
 			},
@@ -183,7 +183,7 @@ class NavBar {
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
-				html: "Preload Adventure Text and Images <small>(2GB+)</small>",
+				html: "預載冒險模組文字和圖片 <small>(2GB+)</small>",
 				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /(?:data|img)\/adventure/),
 				title: "Preload adventure text and images for offline use.",
 			},
@@ -191,7 +191,7 @@ class NavBar {
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
-				html: "Preload All Images <small>(4GB+)</small>",
+				html: "預載所有圖片 <small>(4GB+)</small>",
 				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /img/),
 				title: "Preload all images for offline use.",
 			},
@@ -199,7 +199,7 @@ class NavBar {
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
-				html: "Preload All <small>(5GB+)</small>",
+				html: "預載全部 <small>(5GB+)</small>",
 				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, /./),
 				title: "Preload everything for offline use.",
 			},
@@ -208,9 +208,9 @@ class NavBar {
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
-				html: "Reset Preloaded Data",
+				html: "清除預載資料",
 				click: (evt) => NavBar.InteractionManager._pOnClick_button_clearOffline(evt),
-				title: "Remove all preloaded data, and clear away any caches.",
+				title: "清除所有的預載資料，並清除本站的所有快取。",
 			},
 		);
 	}
@@ -726,15 +726,15 @@ NavBar._ALT_CHILD_PAGES = {
 	"book.html": "books.html",
 	"adventure.html": "adventures.html",
 };
-NavBar._CAT_RULES = "Rules";
-NavBar._CAT_BOOKS = "Books";
-NavBar._CAT_PLAYER = "Player";
-NavBar._CAT_DUNGEON_MASTER = "Dungeon Master";
-NavBar._CAT_ADVENTURES = "Adventures";
-NavBar._CAT_REFERENCES = "References";
-NavBar._CAT_UTILITIES = "Utilities";
-NavBar._CAT_SETTINGS = "Settings";
-NavBar._CAT_CACHE = "Preload Data";
+NavBar._CAT_RULES = "規則";
+NavBar._CAT_BOOKS = "出版書籍";
+NavBar._CAT_PLAYER = "玩家專區";
+NavBar._CAT_DUNGEON_MASTER = "DM專區";
+NavBar._CAT_ADVENTURES = "冒險模組";
+NavBar._CAT_REFERENCES = "參照資料";
+NavBar._CAT_UTILITIES = "其他功能";
+NavBar._CAT_SETTINGS = "設置";
+NavBar._CAT_CACHE = "預載資料";
 
 NavBar._navbar = null;
 

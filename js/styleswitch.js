@@ -65,9 +65,9 @@ class StyleSwitcher {
 
 	getDayNightButtonText () {
 		switch (this.currentStylesheet) {
-			case StyleSwitcher._STYLE_NIGHT_ALT: return "Day Mode";
-			case StyleSwitcher._STYLE_DAY: return "Night Mode";
-			case StyleSwitcher._STYLE_NIGHT: return "Night Mode (Alt)";
+			case StyleSwitcher._STYLE_NIGHT_ALT: return "白晝模式";
+			case StyleSwitcher._STYLE_DAY: return "夜晚模式";
+			case StyleSwitcher._STYLE_NIGHT: return "夜晚模式(改)";
 		}
 	}
 
